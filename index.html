@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Promises</title>
+</head>
+
+<body onload="onInit()">
+    <h1>Hello Promises</h1>
+
+    <details class="yesno-wrapper" data-ds-id="yesno">
+        <summary>Yes or No...</summary>
+
+        <section class="ans-container">
+            <button onclick="onAsk()">May I?</button>
+            <section class="answer" hidden>
+                <h2></h2>
+                <img src="" onload="onImgReady()" />
+            </section>
+        </section>
+    </details>
+
+    <details class="swal-btn-wrapper" data-ds-id="swal">
+        <summary>Using SWAL Prompts with Promises</summary>
+
+        <section class="swal-btn">
+            <button onclick="showPopup()">Fire SWAL</button>
+        </section>
+    </details>
+    
+    <details class="cities-wrapper" data-ds-id="cities">
+        <summary>Cities</summary>
+
+        <section class="city-container">
+            <button onclick="onLoadCities()">Load Cities</button>
+            <button onclick="onCleanAll()">Clean All</button>
+            
+            <ul class="city-list"></ul>
+        </section>
+    </details>
+    
+    <details class="user-modal-wrapper" data-ds-id="modal">
+        <summary>Modal</summary>
+        
+        <section>
+            <button onclick="onAskUser()">Ask the user...</button>
+            <section class="modal" hidden>
+                <h2>Are you sure?</h2>
+                <div class="actions">
+                    <button onclick="onUserDecision(true)">Yes</button>
+                    <button onclick="onUserDecision(false)">No</button>
+                </div>
+            </section>
+        </section>
+    </details>
+    
+    <script src="lib/swal.js"></script>
+    <script src="lib/axios.js"></script>
+
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/ds.service.js"></script>
+    
+    <!-- :yesno -->
+    
+    <!-- <script src="js/services/ans.service.js"></script> -->
+    <script src="js/services/ans.service-axios.js"></script>
+    <!-- <script src="js/services/ans.service-fetch.js"></script> -->
+    <script src="js/controllers/ans.controller.js"></script>
+    
+    <!-- :Cities -->
+    
+    <script src="js/services/city.service.js"></script>
+    <script src="js/controllers/city.controller.js"></script>
+    
+    <!-- :SWAL -->
+    
+    <script src="js/controllers/swal.controller.js"></script>
+    
+    <!-- :GitHub Users -->
+    
+    <!-- <script src="js/services/user.service.js"></script> -->
+    
+    <!-- :Demos -->
+
+    <!-- <script src="js/demos/demo1-fetch-axios-swal.js"></script> -->
+    <!-- <script src="js/demos/demo2-settled-promises.js"></script> -->
+    <!-- <script src="js/demos/demo3-chaining.js"></script> -->
+    <!-- <script src="js/demos/demo4-Promise.all.js"></script> -->
+    <!-- <script src="js/demos/demo5-confirm.js"></script> -->
+    <!-- <script src="js/demos/demo6-delay.js"></script> -->
+    <!-- <script src="js/demos/demo7-modal.js"></script> -->
+    <!-- <script src="js/demos/demo8-finally.js"></script> -->
+    <!-- <script src="js/demos/demo9-examin-chain.js"></script> -->
+    <script src="js/demos/demo10-prepare-to-ex.js"></script>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>

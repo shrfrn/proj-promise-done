@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial,sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+details {
+    margin-block-end: 1em;
+}
+
+summary {
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.yesno-wrapper{
+    background-color: rgb(135, 205, 222);
+}
+
+.cities-wrapper{
+    background-color: rgb(154, 197, 203);
+}
+
+.swal-btn-wrapper{
+    background-color: rgb(126, 153, 162);
+}
+
+details > section {
+    padding: 5px;
+    text-align: center;
+}
+
+.ans-container h2 {
+    text-transform: capitalize;
+    font-size: 1.6em;
+}
+
+.user-modal-wrapper{
+    background-color: darkseagreen;
+}
+
+.modal {
+    background-color: azure;
+    padding: 10px;
+}
+
+.city-container {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.city-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.city-list li {
+    padding: 10px;
+    background-color: rgb(241, 222, 187);
+}
+
+.swal-btn {
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.modal {
+    min-width: max-content;
+    padding: 1em;
+    border: 1px solid darkgrey;
+    box-shadow: 1px 1px 5px rgba(7, 7, 7, 0.232);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%)
+}
+
+.modal .actions {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+}
